@@ -1,0 +1,10 @@
+This is an example project to demonstrate module on demand loading in Zend Framework 1
+
+.htaccess rewrite must be enabled for this project to install correctly.
+
+Please see http://www.stephenrhoades.com for additional information.
+
+The following test URLs are:
+/ - demonstrates default module loading
+/admin - demonstrates admin module loading
+/users/blog/comments - demonstrates a custom route definition loading

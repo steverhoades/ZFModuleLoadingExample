@@ -1,0 +1,25 @@
+<?php
+/**
+ *
+ * @author Steve Rhoades
+ * @see http://www.stephenrhoades.com
+ */
+echo $this->doctype() . PHP_EOL
+?>
+<html>
+<head>
+<?php
+echo $this->headMeta() . PHP_EOL;
+echo $this->headTitle() . PHP_EOL;
+if (in_array('JQuery', array_keys($this->getHelpers()))) {
+    echo $this->jQuery() . PHP_EOL;
+}
+echo $this->headLink() . PHP_EOL;
+echo $this->headStyle() . PHP_EOL;
+echo $this->headScript() . PHP_EOL;
+?>
+</head>
+ <body>
+	<?php echo $this->layout()->content; ?>
+ </body>
+</html>
